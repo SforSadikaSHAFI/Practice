@@ -10,6 +10,8 @@ public class Main {
 //        System.out.println("Swapping two variables..");
 //        p1.swap();
        // p1.findOddEven();
-        p1.checkPalindrome();
+//        p1.checkPalindrome();
+        p1.vowelCounting();
+
     }
 }
