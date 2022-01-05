@@ -80,9 +80,33 @@ public class PracticeMethods {
         System.out.print("Even numbers are :");
         for (int i = 1; i <= n; i++) {
             if (i % 2 == 0) {
-                    System.out.print(i + " ");
+                System.out.print(i + " ");
             }
 
         }
+    }
+    //Write a Java program to check if a positive number is a palindrome or not
+
+    public void checkPalindrome() {
+        Scanner in = new Scanner(System.in);
+        System.out.print("Enter Number : ");
+        int input = in.nextInt();
+        int number = input;
+        int remainder, reverse = 0;
+
+        while (number != 0) {
+            remainder = number % 10;
+            reverse = reverse * 10 + remainder;
+            number = number / 10;
+
+            //number++;
+        }
+        //System.out.println("Reverse :"+reverse);
+        if (input == reverse) {
+            System.out.println(" It is a Palindrome number.");
+        } else {
+            System.out.println(" Not a palindrome number.");
+        }
+
     }
 }

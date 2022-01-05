@@ -9,6 +9,7 @@ public class Main {
 //        p1.findAvg();
 //        System.out.println("Swapping two variables..");
 //        p1.swap();
-        p1.findOddEven();
+       // p1.findOddEven();
+        p1.checkPalindrome();
     }
 }
