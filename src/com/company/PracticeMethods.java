@@ -93,20 +93,23 @@ public class PracticeMethods {
         int input = in.nextInt();
         int number = input;
         int remainder, reverse = 0;
+        //checking weather the number is positive or not
+        if (number > 0) {
+            while (number != 0) {
+                remainder = number % 10;
+                reverse = reverse * 10 + remainder;
+                number = number / 10;
 
-        while (number != 0) {
-            remainder = number % 10;
-            reverse = reverse * 10 + remainder;
-            number = number / 10;
+                //number++;
+            }
+            //System.out.println("Reverse :"+reverse);
+            if (input == reverse) {
+                System.out.println(" It is a palindrome number.");
+            } else {
+                System.out.println(" Not a palindrome number.");
+            }
 
-            //number++;
         }
-        //System.out.println("Reverse :"+reverse);
-        if (input == reverse) {
-            System.out.println(" It is a Palindrome number.");
-        } else {
-            System.out.println(" Not a palindrome number.");
-        }
-
+        else System.out.println("Enter a positive number!!!");
     }
 }
